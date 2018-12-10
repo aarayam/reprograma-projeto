@@ -131,16 +131,20 @@ h4 {
   #hero .btns a:hover {
     color: #77acb7;
   }
-  .bg-primary {
-    background-color: rgb(178, 179, 230) !important;
-  }
+ 
   #info {
   /* padding-bottom: 8rem; */
   margin-top: 48px;
   }
-  
-  .section-heading {
-    margin-top: 0;
+   .info-bg {
+    background-color: rgb(178, 179, 230) !important;
+  }
+  #parceiros {
+    /* padding-bottom: 8rem; */
+    margin-top: 48px;
+    }
+  .parceiros-bg {
+  background-color: rgb(202, 202, 211) !important;
   }
 
   /* #categorias {
@@ -152,7 +156,7 @@ h4 {
   
   #categorias .feature-block {
     background: #fff none repeat scroll 0 0;
-    padding: 30px 30px;
+    padding-top: 50px;
     margin-bottom: 30px;
     transition: all 0.5s ease-in-out 0s;
     /* align-items: center; */
@@ -176,7 +180,6 @@ h4 {
   }
 
 
- 
 
   .footer {
     background: #2a2c30;

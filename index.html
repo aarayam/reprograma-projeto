@@ -22,14 +22,14 @@
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li><a class="nav-link" href="#inicio">Inicio</a></li>
-                <li><a class="nav-link" href="#info">Informações</a></li>
-                <li><a class="nav-link" href="#categorias">ONG's</a></li>
-                <li><a class="nav-link" href="#parceiros">Parceiros</a></li>
-                <li><a class="nav-link" href="#contato">Contato</a></li>
-                <li><a class="nav-link" href="./login.html">Login</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#info">Informações</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#categorias">ONG's</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#parceiros">Parceiros</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#contato">Contato</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="./login.html">Login</a></li>
             </ul>
             </ul>
         </div>
@@ -43,35 +43,37 @@
         </div>
     </header>
 
-    <div id="info" class="container-fluid bg-primary text-center pb-5">
+    <div id="info" class="container-fluid info-bg text-center pb-5">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs justify-content-center" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                <a class="nav-link active" data-toggle="tab" href="#home">Para ONG's</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+                <a class="nav-link" data-toggle="tab" href="#menu1">Para doadores</a>
             </li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
             <div id="home" class="container tab-pane active"><br>
-                <h3>HOME</h3>
+                <h3>Para ONG's</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
+                    <button type="button" class="btn btn-light" href="./signongs.html">Cadastre sua ONG</button>
             </div>
             <div id="menu1" class="container tab-pane fade"><br>
-                <h3>Menu 1</h3>
+                <h3>Para doadores</h3>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</p>
+                    <button type="button" class="btn btn-light" href="./signdoador.html">Cadastre para doar</button>
             </div>
         </div>
     </div>
 
     <div class="container mt-5" id="categorias">
         <div class="text-center">
-            <h2>ONG'S</h2>
+            <h2 class="section-heading">ONG'S</h2>
             <p class="">Escolha para quem doar.</p>
         </div>
         <div class="row text-center">
@@ -144,7 +146,7 @@
     </section>
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
