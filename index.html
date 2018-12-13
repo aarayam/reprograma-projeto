@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700i"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto|Staatliches" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
     <title>UpNotas</title>
@@ -13,16 +14,19 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="/">
-            <img src="img/logo.png" width="35" height="35" class="d-inline-block align-top" alt="logo upnotas"></a>
+        <a class="navbar-brand" href="#">UpNotas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav nav-font">
-                    <li><a class="nav-link" href="/index.html">INICIO</a></li>
-                    <li><a class="nav-link" js-scroll-trigger href="/info.html">INFORMAÇÕES</a></li>
-                    <li><a class="nav-link" js-scroll-trigger href="#categorias">ONG's</a></li>
-                    <li><a class="nav-link" js-scroll-trigger href="#parceiros">PARCEIROS</a></li>
-                    <li><a class="nav-link" js-scroll-trigger href="#contato">CONTATO</a></li>
-                    <li><a class="nav-link" js-scroll-trigger href="/login.html">LOGIN</a></li>
+                <li><a class="nav-link" href="#hero">INICIO</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#info">INFORMAÇÕES</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#categorias">ONG's</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#parceiros">PARCEIROS</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#contato">CONTATO</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="/login.html">LOGIN</a></li>
             </ul>
             </ul>
         </div>
@@ -30,83 +34,206 @@
 
     <header id="hero" class="mt-5">
         <div class="hero-container">
-            <h1>Bem-vindo(a) ao UpNotas</h1>
+            <h1>Bem-vindos ao UpNotas</h1>
             <h2>Doe sua nota fiscal para uma instituição de sua escolha!</h2>
             <img src="img/header.png" alt="Hero Imgs">
         </div>
     </header>
-  
-    <div class="container mt-5" id="categorias">
-        <div class="text-center">
-            <h2 class="section-heading">ONG'S</h2>
-            <p class="">Escolha para quem doar.</p>
+
+    <section id="info" class="padd-section">
+        <div class="container-fluid text-center pb-5">
+            <ul class="nav nav-tabs justify-content-center" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Para ONG's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">Para doadores</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <h3>Para ONG's</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <img class="icones" src="img/svg/ongs.svg">
+                            </div>
+                            <div class="col text-center">
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo
+                                    consequat.</p>
+                                <button type="button" class="btn btn-light" href="./signongs.html">Cadastre sua ONG</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <h3>Para doadores</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <img class="icones" src="img/svg/doadores.svg">
+                            </div>
+                            <div class="col text-center">
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo
+                                    consequat.</p>
+                                <button type="button" class="btn btn-light" href="./signdoador.html">Cadastre para doar</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="row text-center">
 
-            <div class="col-md-4">
-                <div class="feature-block">
-                    <img src="img/svg/ambiental.svg" alt="Mão segurando uma planta" class="img-fluid">
-                    <h4>AMBIENTAL</h4>
+    </section>
+
+    <section id="categorias" class="padd-section">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2 class="section-heading">ONG'S</h2>
+                <p class="">Escolha para quem doar.</p>
+            </div>
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <div class="feature-block">
+                        <img src="img/svg/ambiental.svg" alt="Mão segurando uma planta" class="img-fluid">
+                        <h4>AMBIENTAL</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-block">
+                        <img src="img/svg/capacitacao.svg" alt="Computador" class="img-fluid">
+                        <h4>CAPACITAÇÃO</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-block">
+                        <img src="img/svg/coracao.svg" alt="Coração" class="img-fluid">
+                        <h4>SAÚDE</h4>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="feature-block">
-                    <img src="img/svg/capacitacao.svg" alt="Computador" class="img-fluid">
-                    <h4>CAPACITAÇÃO</h4>
-                </div>
-            </div>
+            <div class="row text-center">
 
-            <div class="col-md-4">
-                <div class="feature-block">
-                    <img src="img/svg/coracao.svg" alt="Coração" class="img-fluid">
-                    <h4>SAÚDE</h4>
+                <div class="col-md-4">
+                    <div class="feature-block">
+                        <img src="img/svg/idosos.svg" alt="Idosos" class="img-fluid">
+                        <h4>IDOSOS</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-block">
+                        <img src="img/svg/educacao.svg" alt="img" class="img-fluid">
+                        <h4>EDUCAÇÃO</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-block">
+                        <img src="img/svg/animal.svg" alt="Livros" class="img-fluid">
+                        <h4>ANIMAIS</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="parceiros" class="padd-section">
+
+        <div class="container-fluid parceiros">
+            <div class="text-center">
+                <h2 class="section-heading">PROJETOS PARCEIROS</h2>
+                <p class="">Conheça alguns dos projetos que apoiamos!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-6 col-lg-3">
+                    <div class="parceiros-card bottom">
+                        <img src="img/svg/pets.svg" class="img-responsive" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-md-6 col-lg-3">
+                    <div class="parceiros-card bottom">
+                        <img src="img/svg/capacitacao.svg" class="img-responsive" alt="img">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-md-6 col-lg-3">
+                    <div class="parceiros-card bottom">
+                        <img src="img/svg/coracao.svg" class="img-responsive" alt="img">
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-md-6 col-lg-3">
+                    <div class="parceiros-card bottom">
+                        <img src="img/svg/educacao.svg" class="img-responsive" alt="img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-lg-4">
+                    <div class="footer-logo">
+
+                        <img src="img/logo.png" width="100" height="100" alt="logo upnotas"></a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-2">
+                    <div class="list-menu">
+
+                        <h4>Mapa do site</h4>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Informações</a></li>
+                            <li><a href="#">Categorias</a></li>
+                            <li><a href="#">Parceiros</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-2">
+                    <div class="list-menu">
+
+                        <h4>Abou Us</h4>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Features item</a></li>
+                            <li><a href="#">Live streaming</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="container"></div> -->
 
-        <div class="row text-center">
-
-            <div class="col-md-4">
-                <div class="feature-block">
-                    <img src="img/svg/idosos.svg" alt="Idosos" class="img-fluid">
-                    <h4>IDOSOS</h4>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-block">
-                    <img src="img/svg/educacao.svg" alt="img" class="img-fluid">
-                    <h4>EDUCAÇÃO</h4>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-block">
-                    <img src="img/svg/animal.svg" alt="Livros" class="img-fluid">
-                    <h4>ANIMAIS</h4>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <section>
-    <div id="parceiros" class="container-fluid parceiros-bg text-center pb-5">
-        <div class="row">
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="img/svg/pets.svg" alt="Card image cap">
-        </div>
-    </div>
-</section>
-
-<section>
-    <div id="contato" class="container-fluid contato-bg text-center pb-5">
-        <div class="row">
-            contato
-        </div>
-    </div>
-</section>
+    </footer>
 
 
     <script src="js/script.js"></script>

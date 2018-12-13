@@ -11,6 +11,8 @@ html {
 
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
   
 .nav-font{
@@ -33,7 +35,7 @@ h4 {
   #hero {
     width: 100%;
     height: calc(100vh - 40px);
-    background: url(../img/hero-bg.png) center bottom no-repeat;
+    background: url(img/nuvem.png) center bottom no-repeat;
     background-size: 100%;
     position: relative;
     margin-top: 40px;
@@ -63,7 +65,7 @@ h4 {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    font-family: "Philosopher", sans-serif;
+    font-family: 'Staatliches', cursive;
     color: #77acb7;
   }
   
@@ -137,17 +139,30 @@ h4 {
     color: #77acb7;
   }
  
-
-  /* #categorias {
-    display: inline-block;
-    height: 40%;
-    width: 40%;
-    margin-left: 30%;
-  } */
+  .padd-section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
   
+  @media (max-width: 992px) {
+    .padd-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  
+
+
+  #info {
+    background: #eaf2f4;    
+  }
+  .icones {
+    width: 40%;
+  }
+
+
   #categorias .feature-block {
     background: #fff none repeat scroll 0 0;
-    padding-top: 50px;
     margin-bottom: 30px;
     transition: all 0.5s ease-in-out 0s;
     /* align-items: center; */
@@ -173,18 +188,49 @@ h4 {
 
 
   #parceiros {
-    margin-top: 48px;
+    margin-top: 40px;
+      background-color: #d8d8d8 !important;
+      padding-top: 20px;
+
     }
 
-  .parceiros-bg {
-  background-color: #d1d1d1 !important;
+    #parceiros .parceiros-card {
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+      height: 150px;
+      width: 150px;
+      overflow: hidden;
+      position: center;
+    }
+    
+    @media (max-width: 600px) {
+      #parceiros .parceiros-card {
+        margin-bottom: 20px;
+      }
+    }
+      
+    #parceiros .parceiros-card img {
+      width: 100%;
+    }
+    
+  .footer {
+    background-color: #818181 !important;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+
   }
 
-
-    
-    .contato-bg {
-      background-color: #3b3b3b !important;
-      }
-
+  .footer .list-menu > h4 {
+    color: #fff;
+    padding-bottom: 20px;
+  }
+  
+  .footer .list-menu ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+  
 
  
