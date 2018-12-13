@@ -1,0 +1,71 @@
+body{
+    background-color: #9595c5;
+}
+
+.nav-font{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px
+  }
+  
+.login {
+    padding: 0.75rem 1rem 0;
+  }
+.caixa {
+background-color: #c1c1e96c;
+width: 80%;
+height: 60vh;
+margin: 20% 10%;
+padding: 1px;
+border-radius: 10px;
+}
+
+
+
+  @media (min-width: 768px) {
+    .login {
+        padding: 1rem 20% 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .login {
+        padding: 0.5rem 18% 1rem;
+        text-align: left;
+        
+    }
+
+    .h1{
+        margin-bottom: 2px;
+    }
+    
+    .form-control{
+     width: 33vw;
+    }   
+
+    #exampleInputNome{
+        margin-right: 2.5px;
+        width: 15vw;
+    }
+    #validationServer02{
+        margin-left: 2.5px;
+        width: 15vw;
+    }
+    
+    .caixa {
+        background-color: #c1c1e96c;
+        width: 55%;
+        height: 70vh;
+        margin: 5% 23%;
+        padding: 5px;
+        border-radius: 10px;
+        }  
+    .btn{
+        margin: 0 40% 1rem;
+    }
+    .frase{
+        color: black; 
+        margin: 0 30% 0;       
+
+    }
+  }
