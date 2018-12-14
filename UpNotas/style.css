@@ -10,6 +10,7 @@ body {
 }
   
 .nav-font{
+  color: #365c8d;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   font-size: 15px
@@ -158,7 +159,7 @@ h4 {
   }
 
   .icones {
-    width: 40%;
+    width: 30%;
   }
 
 

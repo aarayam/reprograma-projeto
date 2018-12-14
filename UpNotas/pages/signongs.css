@@ -1,11 +1,21 @@
 body{
     background-color: #9595c5;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+        font-family: 'Lato', sans-serif;
 }
 
 .nav-font{
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     font-size: 15px
+  }
+  
+  .padd-page {
+    padding-top: 100px;
   }
   
 .login {
