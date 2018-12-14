@@ -25,7 +25,7 @@
                 <li><a class="nav-link" js-scroll-trigger href="#info">INFORMAÇÕES</a></li>
                 <li><a class="nav-link" js-scroll-trigger href="#categorias">ONG's</a></li>
                 <li><a class="nav-link" js-scroll-trigger href="#parceiros">PARCEIROS</a></li>
-                <li><a class="nav-link" js-scroll-trigger href="#contato">CONTATO</a></li>
+                <li><a class="nav-link" js-scroll-trigger href="#footer">CONTATO</a></li>
                 <li><a class="nav-link" js-scroll-trigger href="/login.html">LOGIN</a></li>
             </ul>
             </ul>
@@ -40,72 +40,91 @@
         </div>
     </header>
 
-    <section id="info" class="padd-section">
+    <section id="info">
         <div class="container-fluid text-center pb-5">
             <ul class="nav nav-tabs justify-content-center" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home">Para ONG's</a>
+                    <a class="nav-link active tab" data-toggle="tab" href="#home">Para ONG's</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu1">Para doadores</a>
+                    <a class="nav-link tab" data-toggle="tab" href="#menu1">Para doadores</a>
                 </li>
             </ul>
-
-            <!-- Tab panes -->
             <div class="tab-content">
                 <div id="home" class="container tab-pane active"><br>
-                    <h3>Para ONG's</h3>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col">
                                 <img class="icones" src="img/svg/ongs.svg">
                             </div>
-                            <div class="col text-center">
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo
-                                    consequat.</p>
-                                <button type="button" class="btn btn-light" href="./signongs.html">Cadastre sua ONG</button>
 
+                            <div class="row md-6 mt-5">
+                                <div class="col text-center">
+
+                                    <p>Cadastre sua ONG, conte sobre a causa que apoia e receba doações.</p>
+                                    <button type="button" class="btn btn-light" href="signongs.html">Cadastre sua ONG</button>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <div id="menu1" class="container tab-pane fade"><br>
-                    <h3>Para doadores</h3>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col">
                                 <img class="icones" src="img/svg/doadores.svg">
                             </div>
-                            <div class="col text-center">
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo
-                                    consequat.</p>
-                                <button type="button" class="btn btn-light" href="./signdoador.html">Cadastre para doar</button>
+                            <div class="row md-6 mt-5">
+                                <div class="col text-center">
+                                    <p>Cadastre-se e doe uma nota fiscal sem CPF para uma instituição de sua escolha.</p>
+                                    <button type="button" class="btn btn-light" href="signdoador.html">Cadastre para
+                                        doar</button>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
 
     </section>
 
     <section id="categorias" class="padd-section">
         <div class="container-fluid">
             <div class="text-center">
-                <h2 class="section-heading">ONG'S</h2>
-                <p class="">Escolha para quem doar.</p>
+                <h2>ONG'S</h2>
+                <p>.</p>
             </div>
             <div class="row text-center">
 
                 <div class="col-md-4">
-                    <div class="feature-block">
-                        <img src="img/svg/ambiental.svg" alt="Mão segurando uma planta" class="img-fluid">
-                        <h4>AMBIENTAL</h4>
-                    </div>
+                    <a data-toggle="modal" data-target="#ExemploModalCentralizado">
+                        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                            aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="TituloModalCentralizado">Envie sua nota fiscal</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary">Doar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-block">
+                            <img src="img/svg/ambiental.svg" alt="Mão segurando uma planta" class="img-fluid">
+                            <h4>AMBIENTAL</h4>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="col-md-4">
@@ -150,42 +169,53 @@
         </div>
     </section>
 
+    <section id="parceiros" class="padd-section text-center">
 
-    <section id="parceiros" class="padd-section">
-
-        <div class="container-fluid parceiros">
-            <div class="text-center">
-                <h2 class="section-heading">PROJETOS PARCEIROS</h2>
-                <p class="">Conheça alguns dos projetos que apoiamos!</p>
+            <div class="container">
+              <div class="text-center">
+                <h2>Projetos Parceiros</h2>
+                <p>Conheça projetos que apoiamos.</p>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-md-6 col-lg-3">
-                    <div class="parceiros-card bottom">
-                        <img src="img/svg/pets.svg" class="img-responsive" alt="img">
+        
+            <div class="container mt-5">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                            <div class="icone-link">
+                                    <a href="/" target="_blank">
+                            <img src="img/parceiros/natalnerd.png" alt="logo natal nerd" class="icone-link rounded" ></a>
+                            <a href="/" target="_blank">
+                            <img src="img/parceiros/revolufabric.png" alt="logo revolufabric" class="icone-link rounded"></a>
+                            <a href="/" target="_blank">
+                            <img src="img/parceiros/novolar.png" alt="logo novo lar" class="icone-link rounded"></a>
+                            <a href="/" target="_blank">
+                            <img src="img/parceiros/alimentandovidas.png" alt="logo alimentando vidas" class="icone-link rounded"></a>
+
+</div>
+                        </div>
+                      <div class="carousel-item">
+                            <div class="icone-link">
+                                    <a href="/" target="_blank">
+                                    <img src="img/parceiros/ale.png" alt="logo ame lute empodere" class="icone-link rounded"></a>
+                                    <a href="/" target="_blank">
+                                    <img src="img/parceiros/digitalconsulting.png" alt="logo digital consulting" class="icone-link rounded"></a>
+                                    <a href="/" target="_blank">
+                                    <img src="img/parceiros/mariafirmina.png" alt="logo maria firmina" class="icone-link rounded"></a>
+                                    <a href="/" target="_blank">
+                                    <img src="img/parceiros/novolar.png" alt="logo novo lar" class="icone-link rounded"></a>
+                                </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-md-6 col-lg-3">
-                    <div class="parceiros-card bottom">
-                        <img src="img/svg/capacitacao.svg" class="img-responsive" alt="img">
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-md-6 col-lg-3">
-                    <div class="parceiros-card bottom">
-                        <img src="img/svg/coracao.svg" class="img-responsive" alt="img">
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-md-6 col-lg-3">
-                    <div class="parceiros-card bottom">
-                        <img src="img/svg/educacao.svg" class="img-responsive" alt="img">
-                    </div>
-                </div>
-
-            </div>
-        </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
     </section>
 
     <footer id="footer" class="footer">
@@ -207,29 +237,15 @@
                         <h4>Mapa do site</h4>
 
                         <ul class="list-unstyled">
-                            <li><a href="#">Início</a></li>
-                            <li><a href="#">Informações</a></li>
-                            <li><a href="#">Categorias</a></li>
-                            <li><a href="#">Parceiros</a></li>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="#info">Informações</a></li>
+                            <li><a href="#categorias">Categorias</a></li>
+                            <li><a href="#parcerios">Parceiros</a></li>
                         </ul>
 
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-2">
-                    <div class="list-menu">
-
-                        <h4>Abou Us</h4>
-
-                        <ul class="list-unstyled">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Features item</a></li>
-                            <li><a href="#">Live streaming</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-
-                    </div>
-                </div>
             </div>
         </div>
 
